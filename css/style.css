@@ -33,17 +33,14 @@
     height: 500px;
     padding-right: 10px;
 }
-.form{
-	width:250px;
+form{
+	width:27%!important;
 	height:500px;
+	margin-left: 37%;
 	border:2px solid #a5a5a5;
-	padding:20px;
+	padding:37px;
 	background-color:#f3f3f3;
 	border-radius:3px;
-	float:left;
-	text-align:center;
-	margin-left:100px;
-	margin-top:50px;
 	background-image: url(../images/m14.jpg);
 }
 .h3,.p{
@@ -51,9 +48,9 @@
 	font-family:'Raleway',sans-serif;
 	color:#006400
 }
-.input{
+input{
 	width:100%;
-	margin:10px 0;
+	margin:13px !important;
 	padding:5px;
 	height:35px;
 	box-shadow:1px 1px 1px 1px gray;
@@ -71,6 +68,7 @@ textarea#vmsg{
 	padding:5px;
 	box-shadow:1px 1px 1px 1px gray;
 	border-radius:3px;
+	margin: 15px !important;
 }
 #container{
 	margin:50px auto;
@@ -92,3 +90,4 @@ textarea#vmsg{
 .panel-footer{
 	text-align: center;
 }
+
