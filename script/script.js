@@ -16,12 +16,14 @@ function callMovie(movieID){
 	 $("#right").css("width","50%");
 	 $.getJSON("http://api.themoviedb.org/3/movie/"+movieID+"?api_key=22d8568621673d1336e8d0d1fb253821").then(function (data) {
 	 var image="https://image.tmdb.org/t/p/w500"+data.backdrop_path;
-	 $("#movPoster").attr("src",image);
-	 $("#title").html("MOVIE TITLE : " +data.title);	
-	 $("#language").html("MOVIE LANGUAGE : " +data.original_language);
-	 $("#releaseDate").html("RELEASE DATE :" +data.release_date);
-	 $("#popularity").html("POPULARITY :" +data.popularity);
-	 $("#overview").html("OVERVIEW :"+data.overview);
+	 $("#movPoster").attr("src",image).css("border-width","thin");
+	 $("#movPoster").attr("src",image).css("border-color","black");
+	 $("#movPoster").attr("src",image).css("border-style","solid");	
+	 $("#title").html("<b>MOVIE TITLE </b>: " +data.title);	
+	 $("#language").html("<b>MOVIE LANGUAGE </b> : " +data.original_language);
+	 $("#releaseDate").html("<b>RELEASE DATE </b>:" +data.release_date);
+	 $("#popularity").html("<b>POPULARITY </b>:" +data.popularity);
+	 $("#overview").html("<b>OVERVIEW </b>:"+data.overview);
 	 console.log("image:"+image);
 
 	/*console.log("Movie Title:"+data.title);
@@ -37,12 +39,9 @@ function callMovie(movieID){
 // about
 $(document).ready(function(){
 $("#aboutUs").dblclick(function(){
-	//console.log("welcome");
 	$.getJSON("json/abtjs.json",function(data){
 		$.each(data.about,function(key,value){
 			console.log(key,value);
-			//$("#aboutOne").append(this['one']);
-			//$("#aboutTwo").append(this['two']);
 			$("#home").html(aboutWrap(value.title,value.contentOne));
 		});
 	});
@@ -67,7 +66,7 @@ $("<br/>"),
 $("<textarea/>",{rows:'5px',cols:'27px',type:'text',id:'vmsg',name:'msg',placeholder:'message'}),
 $("<br/>"),
 $("<br/>"),
-$("<input/>",{type:'submit',id:'submit',value:'submit'})
+$("<input/>",{type:'submit',id:'submit',value:'submit'}),$("<br/>"),$("<br/>")
 	))
 });
 });

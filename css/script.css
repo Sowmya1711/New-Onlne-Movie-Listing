@@ -2,8 +2,9 @@
   	margin: 10px 0;
 }
 .navbar-default {
-	background-color: #fff;
+	background-color: #8B0000;
 	border-color: #fff;
+	padding-right: 35px;
 }
 .brand-name {
  	font-family: 'Josefin Slab', serif;
@@ -15,7 +16,6 @@
 .nav-container {
 	padding-top: 8px;
 }
-
 .navbar-custom {
     font-size: 20px;
     background-color: #FFF;
@@ -26,4 +26,85 @@
 }
 .content{
 	background-color: white;
+	background-image: url("../image/m14.jpg");
+}
+.about{
+	background-image: url(../image/m14.jpg);
+    height: 500px;
+    padding-right: 10px;
+}
+.form{
+	width:250px;
+	height:500px;
+	border:2px solid #a5a5a5;
+	padding:20px;
+	background-color:#f3f3f3;
+	border-radius:3px;
+	float:left;
+	text-align:center;
+	margin-left:100px;
+	margin-top:50px;
+	background-image: url(../image/m14.jpg);
+}
+.h3,.p{
+	text-align:center;
+	font-family:'Raleway',sans-serif;
+	color:#006400
+}
+.input{
+	width:100%;
+	margin:10px 0;
+	padding:5px;
+	height:35px;
+	box-shadow:1px 1px 1px 1px gray;
+	border-radius:3px
+}
+input#submit{
+	padding:5px;
+	background-color:#3fb8e8;
+	color:#fff;
+	height:41px;
+	font-size:16px
+	/*width: 600px;
+	margin-right: 150px;
+	margin-left: 450px;*/
+	height: 25px;
+}
+textarea#vmsg{
+	padding:5px;
+	box-shadow:1px 1px 1px 1px gray;
+	border-radius:3px;
+	/*width: 190px;
+    margin-right: 104px;
+    margin-left: 450px;*/
+}
+#container{
+	margin:50px auto;
+	width:960px
+	background-image: url(../image/m14.jpg);
+}
+.h2{
+	font-family:'Raleway',sans-serif;
+	color:#006400;
+	text-shadow:1px 1px 1px gray
+}
+/*input#vname{
+	width: 190px;
+    margin-right: 104px;
+    margin-left: 450px;
+}
+input#vemail{
+	width: 190px;
+    margin-right: 104px;
+    margin-left: 450px;
+}*/
+#contactUs{
+	padding-right: 40px;
+}
+.panel panel-default{
+	padding-top: 60px;
+    margin-top: -45px;    
+}
+.panel-footer{
+	text-align: center;
 }
