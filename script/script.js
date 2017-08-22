@@ -25,28 +25,19 @@ function callMovie(movieID){
 	 $("#popularity").html("<b>POPULARITY </b>:" +data.popularity);
 	 $("#overview").html("<b>OVERVIEW </b>:"+data.overview);
 	 console.log("image:"+image);
-
-	/*console.log("Movie Title:"+data.title);
-	console.log("Movie Original Language:"+data.original_language);
-	console.log("Movie Release Date:"+data.release_date);
-	console.log("Movie Overview:"+data.overview);
-	console.log("Movie Popularity:"+data.popularity);
-	console.log("Movie Path:"+data.poster_path);*/
 	});
 }
 
 
 // about
-$(document).ready(function(){
-$("#aboutUs").dblclick(function(){
+function aboutUs(aboutId){
 	$.getJSON("json/abtjs.json",function(data){
-		$.each(data.about,function(key,value){
+	$.each(data.about,function(key,value){
 			console.log(key,value);
 			$("#home").html(aboutWrap(value.title,value.contentOne));
-		});
 	});
-});
-});
+		});
+}
 
 function aboutWrap(title,contentOne){
 	var output= '<div class="about"> <span class="title"> '+title+'<br> </span> <span class="contentOne">' +contentOne+'</span> </div>';
